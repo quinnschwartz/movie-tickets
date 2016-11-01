@@ -52,13 +52,21 @@ $(document).ready(function() {
                 }
               }
             };
-    //$("#show-confirmation").show();
-    $(this).append($("#show-confirmation"));
+    $("#show-confirmation").show();
     $("#show-confirmation h3").text(newMovie.title);
     $(".movie-title").text(newMovie.title);
     $(".show-time").text(newMovie.time);
     $(".quantity").text(newMovie.quantity);
     $(".cost").text(cost());
+    if (newMovie.title == "Alien") {
+      $("img#alien").show();
+    } else if (newMovie.title == "Halloween") {
+      $("img#halloween").show();
+    } else if (newMovie.title == "The Shining") {
+      $("img#shining").show();
+    } else {
+      $("img#scream").show();
+    }
   return resetField();
 });
 });

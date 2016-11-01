@@ -1,3 +1,8 @@
-/*#show-confirmation {
+#show-confirmation {
   display: none;
-}*/
+}
+
+img {
+  display: none;
+  max-width: 500px;
+}
