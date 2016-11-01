@@ -60,12 +60,24 @@ $(document).ready(function() {
     $(".cost").text(cost());
     if (newMovie.title == "Alien") {
       $("img#alien").show();
+      $("img#halloween").hide();
+      $("img#shining").hide();
+      $("img#scream").hide();
     } else if (newMovie.title == "Halloween") {
       $("img#halloween").show();
+      $("img#alien").hide();
+      $("img#shining").hide();
+      $("img#scream").hide();
     } else if (newMovie.title == "The Shining") {
       $("img#shining").show();
+      $("img#alien").hide();
+      $("img#halloween").hide();
+      $("img#scream").hide();
     } else {
       $("img#scream").show();
+      $("img#halloween").hide();
+      $("img#shining").hide();
+      $("img#alien").hide();
     }
   return resetField();
 });
