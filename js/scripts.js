@@ -1,4 +1,4 @@
-function Movie(title, time, age, quantity) {
+var Movie = function Movie(title, time, age, quantity) {
   debugger;
   this.title = title;
   this.time = time;
